@@ -44,9 +44,7 @@ public class Main {
                     libro1.getNombreAutor().mostrarAutor();
                     System.out.println("------------------------------");
 
-
-
-
+                    libro1.mostrarMensaje();
 
                     break;
                 }

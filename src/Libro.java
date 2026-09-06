@@ -63,4 +63,9 @@ public class Libro {
         return this.stock=stock+copiasCantidad;
 
     }
+
+    public void mostrarMensaje(){
+
+        System.out.println("El libro "+titulo+" de "+nombreAutor.getNombre()+". Se vende a "+precio+" pesos.");
+    }
 }
