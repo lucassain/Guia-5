@@ -39,6 +39,10 @@ public class Main {
 
                     System.out.println("Nuevo precio: "+libro1.getPrecio());
                     System.out.println("Nuevo stock: "+libro1.getStock());
+                    System.out.println("------------------------------");
+
+                    libro1.getNombreAutor().mostrarAutor();
+                    System.out.println("------------------------------");
 
 
 
