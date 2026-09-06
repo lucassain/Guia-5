@@ -33,6 +33,16 @@ public class Main {
                     System.out.println("Datos de "+libro1.getTitulo()+":");
                     libro1.mostrarLibro();
 
+                    libro1.ModificarPrecio(50);
+
+                    libro1.ModificarStock(50);
+
+                    System.out.println("Nuevo precio: "+libro1.getPrecio());
+                    System.out.println("Nuevo stock: "+libro1.getStock());
+
+
+
+
 
                     break;
                 }

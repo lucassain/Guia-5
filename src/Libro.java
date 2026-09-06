@@ -52,4 +52,15 @@ public class Libro {
         System.out.println("Stock: "+stock);
         System.out.println("Nombre del autor: "+nombreAutor);
     }
+
+    public double ModificarPrecio(double nuevoPrecio){
+
+        return this.precio=precio+nuevoPrecio;
+
+    }
+    public  int ModificarStock(int copiasCantidad) {
+
+        return this.stock=stock+copiasCantidad;
+
+    }
 }
