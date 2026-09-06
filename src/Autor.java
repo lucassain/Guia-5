@@ -46,4 +46,12 @@ public class Autor {
     public void setGenero(char genero) {
         this.genero = genero;
     }
+
+    public void mostrarAutor (){
+
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Apellido: "+apellido);
+        System.out.println("Email: "+email);
+        System.out.println("Genero: "+genero);
+    }
 }

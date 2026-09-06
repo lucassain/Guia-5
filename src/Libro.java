@@ -1,12 +1,12 @@
 public class Libro {
     private String titulo;
-    private double precic;
+    private double precio;
     private int stock;
     private Autor nombreAutor;
 
-    public Libro(String titulo, double precic, int stock, Autor nombreAutor) {
+    public Libro(String titulo, double precio, int stock, Autor nombreAutor) {
         this.titulo = titulo;
-        this.precic = precic;
+        this.precio = precio;
         this.stock = stock;
         this.nombreAutor = nombreAutor;
     }
@@ -22,12 +22,12 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public double getPrecic() {
-        return precic;
+    public double getPrecio() {
+        return precio;
     }
 
-    public void setPrecic(double precic) {
-        this.precic = precic;
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
     public int getStock() {
@@ -44,5 +44,12 @@ public class Libro {
 
     public void setNombreAutor(Autor nombreAutor) {
         this.nombreAutor = nombreAutor;
+    }
+
+    void mostrarLibro (){
+        System.out.println("Titulo del libro: "+titulo);
+        System.out.println("Precio: $ "+precio);
+        System.out.println("Stock: "+stock);
+        System.out.println("Nombre del autor: "+nombreAutor);
     }
 }
