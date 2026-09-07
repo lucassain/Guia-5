@@ -4,9 +4,9 @@ public class Cliente {
     private String ID;
     private String nombre;
     private String email;
-    private float porcentajeDescuento;
+    private double porcentajeDescuento;
 
-    public Cliente(String ID, String nombre, String email, float porcentajeDescuento) {
+    public Cliente(String nombre, String email, double porcentajeDescuento) {
         this.ID = UUID.randomUUID().toString();
         this.nombre = nombre;
         this.email = email;
@@ -14,6 +14,7 @@ public class Cliente {
     }
 
     public Cliente() {
+        this.ID = UUID.randomUUID().toString();
     }
 
     public String getID() {
@@ -37,11 +38,11 @@ public class Cliente {
         this.email = email;
     }
 
-    public float getPorcentajeDescuento() {
+    public double getPorcentajeDescuento() {
         return porcentajeDescuento;
     }
 
-    public void setPorcentajeDescuento(float porcentajeDescuento) {
+    public void setPorcentajeDescuento(double porcentajeDescuento) {
         this.porcentajeDescuento = porcentajeDescuento;
     }
 }

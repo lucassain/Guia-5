@@ -52,6 +52,19 @@ public class Main {
                     break;
                 }
 
+                case 2:{
+
+                    Cliente cliente1=new Cliente("Franco", "franbide123@gmail.com", 30);
+
+                    Factura factura1=new Factura(200, cliente1);
+
+                    double montoFinal=factura1.calcularMontoFinal();
+
+                    System.out.println(montoFinal);
+
+                    break;
+                }
+
                 default:{
                     System.out.println("Opcion invalida. Ingrese otra opcion.");
                     break;
