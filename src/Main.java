@@ -62,6 +62,19 @@ public class Main {
 
                     System.out.println(montoFinal);
 
+                    cliente1.mostrarMensaje();
+
+                    factura1.mostrarFactura();
+
+
+                    break;
+                }
+
+                case 3:{
+
+                    Cilindro cilindro1=new Cilindro(3, 5);
+                    cilindro1.
+
                     break;
                 }
 

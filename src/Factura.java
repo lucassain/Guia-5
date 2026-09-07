@@ -52,11 +52,19 @@ public class Factura {
        el descuento que posee el cliente.
      */
 
+    public double obtenerDescuento (){
+        double descuento;
+        return descuento= montoTotal*(cliente.getPorcentajeDescuento()/100);
+
+    }
+
     public double calcularMontoFinal (){
-        double descuento= montoTotal*(cliente.getPorcentajeDescuento()/100);
+        return this.montoTotal-obtenerDescuento();
+    }
 
-        return this.montoTotal=montoTotal-descuento;
-
+    public void mostrarFactura(){
+        System.out.println("Factura:");
+        System.out.println("Id= "+idFactura+",Fecha= "+fecha+",Monto= "+montoTotal+", MontoDesc="+obtenerDescuento()+",Cliente: Id= "+cliente.getID()+", Nombre= "+cliente.getNombre()+", Email= "+cliente.getEmail()+", Descuento= "+cliente.getPorcentajeDescuento());
     }
 
 }

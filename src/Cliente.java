@@ -45,4 +45,11 @@ public class Cliente {
     public void setPorcentajeDescuento(double porcentajeDescuento) {
         this.porcentajeDescuento = porcentajeDescuento;
     }
+
+    public void mostrarMensaje(){
+        System.out.println("Cliente:");
+        System.out.println("Id= "+ID+",Nombre="+nombre +",Email= "+email+",Descuento= "+porcentajeDescuento);
+    }
+
+    
 }
