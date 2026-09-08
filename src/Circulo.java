@@ -1,18 +1,18 @@
 public class Circulo {
     private double radio=1.0;
-    private String color= "rojo";
-    private final double  PI= 3.141592;
+    private String color= "Rojo";
+    private final double PI= 3.1416;
 
     public Circulo(double radio, String color) {
         this.radio = radio;
         this.color = color;
     }
 
-    public Circulo(double radio) {
-        this.radio = radio;
+    public Circulo() {
     }
 
-    public Circulo() {
+    public Circulo(double radio) {
+        this.radio = radio;
     }
 
     public double getRadio() {
@@ -35,7 +35,15 @@ public class Circulo {
         return PI;
     }
 
-    public  double calcularArea(){
-    return Math.pow(radio,2)*PI;
+    public double calcularArea (){
+        return Math.pow(radio,2)*PI;
     }
+
+    public void mostrarCaracteristicas (){
+        System.out.println("Circulo");
+        System.out.println("Radio= "+radio);
+        System.out.println("Color= "+color);
+        System.out.println("Area= "+calcularArea());
+    }
+
 }
